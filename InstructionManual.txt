@@ -1,0 +1,39 @@
+Instructions for running the program.
+
+Step 1. Run "Simulation.java" file.
+
+Step 2. CLI will prompt for the 'height' of grid. Enter an integer greater than "3".
+
+Step 3. CLI will prompt for the 'width' of grid. Enter an integer greater than "3".
+
+If you enter a grid of height 4 and width 3 then grid will be following format
+            [00 10 20 30 ]
+            [01 11 21 31 ]
+            [02 12 22 31 ]
+
+
+Step 4. Choose how you would like to name the cells. If you choose by
+        1. user input
+
+            CLI will prompt for the name and state of each cell in order
+            row 1 [ 00->10->20->30] then row 2 [01->11->21->31] then row 3 and so on.
+
+            i)  You must provide a unique name for each cell. Program does not allow repetition of names.
+            ii) Then select the state of cell
+                    1 for Alive
+                    0 for dead
+
+
+
+        2. Default input
+            i) Then the program names the cells automatically by default with names from "0" to max size
+             according to the size of grid.
+             If the size of grid is of height 5 and width 6
+             then [  0  1  2  3  4  5 ]
+                  [  6  7  8  9 10 11 ]
+                  [ 12 13 14 15 16 17 ]
+                  [ 18 19 20 21 22 23 ]
+                  [ 24 25 26 27 28 29 ]
+             ii) Default input also sets the cells as active.
+
+Step 5.
