@@ -99,6 +99,7 @@ public class Grid {
     "." denotes dead cells.
      */
     public void printGrid() {
+        System.out.println("Output Grid");
         System.out.println("----");
         for (int i = 0; i < this.height; i++) {
             String line = "|";

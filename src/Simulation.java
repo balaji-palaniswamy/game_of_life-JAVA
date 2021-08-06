@@ -78,10 +78,10 @@ public class Simulation {
                     System.out.println("Not an integer ! Enter a valid integer!");
                 }
             }
-
+            active.tick();
             active.printGrid();
             boolean menu = true;
-            int tickCount = 0;
+            int tickCount = 1;
 
 
             while (menu) {
