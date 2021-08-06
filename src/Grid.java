@@ -74,6 +74,9 @@ public class Grid {
                 count++;
             }
         }
+        this.grid[0][1].setAlive(true);
+        this.grid[1][1].setAlive(true);
+        this.grid[2][1].setAlive(true);
     }
 
     /*

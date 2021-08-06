@@ -1,6 +1,6 @@
 Instructions for running the program.
 
-Step 1. Run "Simulation.java" file.
+Step 1. Run "Simulation.java" file in 'src' folder on CLI.
 
 Step 2. CLI will prompt for the 'height' of grid. Enter an integer greater than "3".
 
@@ -10,7 +10,6 @@ If you enter a grid of height 4 and width 3 then grid will be following format
             [00 10 20 30 ]
             [01 11 21 31 ]
             [02 12 22 31 ]
-
 
 Step 4. Choose how you would like to name the cells. If you choose by
         1. user input
@@ -23,8 +22,6 @@ Step 4. Choose how you would like to name the cells. If you choose by
                     1 for Alive
                     0 for dead
 
-
-
         2. Default input
             i) Then the program names the cells automatically by default with names from "0" to max size
              according to the size of grid.
@@ -34,6 +31,32 @@ Step 4. Choose how you would like to name the cells. If you choose by
                   [ 12 13 14 15 16 17 ]
                   [ 18 19 20 21 22 23 ]
                   [ 24 25 26 27 28 29 ]
-             ii) Default input also sets the cells as active.
+             ii) Default input also sets the cells 01,11,21 as active.
 
-Step 5.
+        When all cells are named the CLI will show the complete grid.
+        In the grid "*" denotes 'live cell' and "." denotes 'dead cell'
+
+Step 5: Select an option from the menu
+
+        1. Display grid
+            This displays the current status of the grid.
+
+        2. find cell by name
+            This method requires a valid name of cell as input and returns the current state of that cell.
+
+        3. Proceed to next tick
+            This method updates the grid to next generation based on the conditions below.
+                1. Any live cell with fewer than two live neighbors dies, as if by loneliness.
+                2. Any live cell with more than three live neighbors dies, as if by overcrowding.
+                3. Any live cell with two or three live neighbors lives, unchanged, to the next generation.
+                4. Any dead cell with exactly three live neighbors comes to life.
+
+        4. Reset Grid
+              This method starts a new grid from the beginning of tick 0;
+
+        5. Exit
+            This option stops the program from running.
+
+    Menu is a repetitive process it will not stop until the user selects the exit option.
+    User can use 'proceed to next tick' to proceed forward for any number of generation.
+    CLI will show the count of 'tick' above menu option . Each count of tick represents a single generation.
